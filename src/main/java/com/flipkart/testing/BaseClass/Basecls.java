@@ -37,11 +37,6 @@ public class Basecls {
 		String browserName= prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\com.flipkart.testing\\drivers\\chromedriver.exe");
-		    //ChromeOptions options= new ChromeOptions();
-			//options.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
-			//options.setExperimentalOption("useAutomationExtension", false);
-			//options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));	
-			//driver=new ChromeDriver(options);
 			driver=new ChromeDriver();
 		}
 		else if(browserName.equals("FF")) {
@@ -50,7 +45,6 @@ public class Basecls {
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-//		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOOUT, TimeUnit.SECONDS);
 //		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("URL"));
 

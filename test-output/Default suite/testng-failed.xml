@@ -5,14 +5,9 @@
     <classes>
       <class name="com.flipkart.testing.TestPages.GoogleNestMini.GoogleNestMINIProductTest">
         <methods>
-          <include name="googleNestminiFeatureImgProductVerifyTest"/>
-          <include name="pageVerifygoogleNestminiFeatureImgProductVerifyTest"/>
-          <include name="ColorSelectionTest"/>
           <include name="TitleVerifyTest"/>
-          <include name="ColorSelectiongoogleNestminiFeatureImgProductVerifyTest"/>
           <include name="Setup"/>
           <include name="tearDown"/>
-          <include name="pageVerify"/>
         </methods>
       </class> <!-- com.flipkart.testing.TestPages.GoogleNestMini.GoogleNestMINIProductTest -->
     </classes>
