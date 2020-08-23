@@ -11,8 +11,7 @@ public class GoogleNestMINI extends Basecls{
 	@FindBy(xpath = "/html/body/div[1]/div/div[3]/div[1]/div[2]/div[2]/div/div[1]/h1")
 	WebElement GoogleNestMini_Verify;
 
-	@FindBy(xpath = "/html/body/div/div/div[3]/div[3]/div[2]/div/div[1]/a")
-	WebElement googleNestminiImg1_LINK;
+	
 	
 	@FindBy(id = "swatch-1-color")
 	WebElement ColorSelection;
