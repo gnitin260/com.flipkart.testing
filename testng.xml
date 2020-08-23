@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.flipkart.testing.TestPages.AppleWatchTest"/>
+      <class name="com.flipkart.testing.TestPages.SeagateTest"/>
+      <class name="com.flipkart.testing.TestPages.CartTest"/>
+      <class name="com.flipkart.testing.TestPages.MiTest"/>
+      <class name="com.flipkart.testing.TestPages.AboutUsTest"/>
+      <class name="com.flipkart.testing.TestPages.IpadProTest"/>
+      <class name="com.flipkart.testing.TestPages.LoginTest"/>
+      <class name="com.flipkart.testing.TestPages.InvalidLoginTest"/>
+      <class name="com.flipkart.testing.TestPages.AppleTest"/>
+      <class name="com.flipkart.testing.TestPages.MobileTest"/>
+      <class name="com.flipkart.testing.TestPages.HardDiskTest"/>
+      <class name="com.flipkart.testing.TestPages.HomePageTest"/>
+      <class name="com.flipkart.testing.TestPages.SmartWatchTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
