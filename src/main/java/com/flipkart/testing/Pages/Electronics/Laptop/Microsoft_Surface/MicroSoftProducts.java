@@ -29,6 +29,12 @@ public class MicroSoftProducts extends Basecls{
 	@FindBy(xpath = "/html/body/div/div/div[3]/div[3]/div[4]/div/div/div/img[1]")
 	WebElement AboutMicroSoftImg;
 	
+	@FindBy(xpath = "/html/body/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/div[1]/div/a")
+	WebElement SurfacePro_6;
+	
+	@FindBy(xpath = "/html/body/div[1]/div/div[3]/div[3]/div[1]/div/div[2]/div[2]/div/a")
+	WebElement SurfacePro_7;
+	
 	public MicroSoftProducts() {
 		PageFactory.initElements(driver, this);
 	}
@@ -63,5 +69,17 @@ public class MicroSoftProducts extends Basecls{
 	public boolean AboutMicroSoftImgVerify() throws IOException, InterruptedException {
 		TestUtil.TakeScreenShot(AboutMicroSoftImg,"AboutMicroSoftActual", "AboutMicroSoft");
 		return AboutMicroSoftImg.isDisplayed();
+	}
+	
+	public MicroSoft_Surface_6 navigatetoMicroSoft_6_Pro() throws InterruptedException {
+		Thread.sleep(5000);
+		SurfacePro_6.click();
+		return new MicroSoft_Surface_6();
+	}
+	
+	public MicroSoft_SurfacePro_7 navigatetoMicroSoft_7_Pro() throws InterruptedException {
+		Thread.sleep(5000);
+		SurfacePro_7.click();
+		return new MicroSoft_SurfacePro_7();
 	}
 }

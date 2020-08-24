@@ -1,4 +1,4 @@
-package MicroSoft_Product;
+package com.flipkart.testing.TestPages.MicroSoft_Product;
 
 import java.io.IOException;
 
