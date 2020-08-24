@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.flipkart.testing.BaseClass.Basecls;
 import com.flipkart.testing.Pages.Electronics.Google_Nest.Google_Nest_Mini;
+import com.flipkart.testing.Pages.Electronics.Laptop.Microsoft_Surface.MicroSoftProducts;
 import com.flipkart.testing.Pages.Electronics.SmartWatchWearable.SmartWatch;
 
 public class Menu extends Basecls{
@@ -19,6 +20,9 @@ public class Menu extends Basecls{
 	
 	@FindBy(xpath = "//*[contains(text(),'Google Nest')]")
 	WebElement GoogleNestMiniBtn;
+	
+	@FindBy(xpath = "//*[contains(text(),'Microsoft Store')]")
+	WebElement MicroSoft_ProductBtn;
 
 	
 	public Menu() {
@@ -41,5 +45,13 @@ public class Menu extends Basecls{
 		GoogleNestMiniBtn.click();
 		return new Google_Nest_Mini();
 		
+	}
+	
+	public MicroSoftProducts navigatetoMicroSoft_Product() throws InterruptedException {
+		Thread.sleep(5000);
+		ElectronicsBtn.click();
+		Thread.sleep(2000);
+		MicroSoft_ProductBtn.click();
+		return new MicroSoftProducts();
 	}
 }

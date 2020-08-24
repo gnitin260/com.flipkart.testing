@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.flipkart.testing.TestPages.GoogleNestMini.GoogleNestMINIProductTest">
+      <class name="MicroSoft_Product.MicroSoft_product_Test">
         <methods>
-          <include name="TitleVerifyTest"/>
+          <include name="AllSurfaceImgVerify_Test"/>
           <include name="Setup"/>
-          <include name="tearDown"/>
+          <include name="tesrdown"/>
         </methods>
-      </class> <!-- com.flipkart.testing.TestPages.GoogleNestMini.GoogleNestMINIProductTest -->
+      </class> <!-- MicroSoft_Product.MicroSoft_product_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
