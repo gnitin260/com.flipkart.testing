@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.flipkart.testing.TestPages.MicroSoft_Product.MicroSoft_Surface_7_Test">
+      <class name="com.flipkart.testing.TestPages.GoogleAssistant.Google_Assistant_Test">
         <methods>
-          <include name="TitleVerify_Test"/>
+          <include name="SetUp"/>
           <include name="tearDown"/>
-          <include name="Setup"/>
-          <include name="ProductVerify_Test"/>
+          <include name="googleAssistant_SmartPhoneImg2_Verify_Test"/>
         </methods>
-      </class> <!-- com.flipkart.testing.TestPages.MicroSoft_Product.MicroSoft_Surface_7_Test -->
+      </class> <!-- com.flipkart.testing.TestPages.GoogleAssistant.Google_Assistant_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
