@@ -8,6 +8,7 @@ import com.flipkart.testing.BaseClass.Basecls;
 import com.flipkart.testing.Pages.Electronics.GoogleAssistance.GoogleAssistant;
 import com.flipkart.testing.Pages.Electronics.Google_Nest.Google_Nest_Mini;
 import com.flipkart.testing.Pages.Electronics.Laptop.Microsoft_Surface.MicroSoftProducts;
+import com.flipkart.testing.Pages.Electronics.SmartWatchWearable.SmartWatchs;
 
 public class Menu extends Basecls{
 
@@ -32,14 +33,14 @@ public class Menu extends Basecls{
 		PageFactory.initElements(driver, this);
 	}
 	
-//	public SmartWatch smartWatch() throws InterruptedException {
-//		Thread.sleep(5000);
-//		ElectronicsBtn.click();
-//		Thread.sleep(2000);
-//		smartWatchBtn.click();
-//		return new SmartWatch();
-//		
-//	}
+	public SmartWatchs navigatetosmartWatch() throws InterruptedException {
+		Thread.sleep(5000);
+		ElectronicsBtn.click();
+		Thread.sleep(2000);
+		smartWatchBtn.click();
+		return new SmartWatchs();
+		
+	}
 	
 	public Google_Nest_Mini navigatetoGoogleNestMini() throws InterruptedException {
 		Thread.sleep(5000);
