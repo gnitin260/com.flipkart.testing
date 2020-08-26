@@ -5,8 +5,9 @@
     <classes>
       <class name="com.flipkart.testing.TestPages.SmartWatches.FitBit_Test">
         <methods>
-          <include name="TitleVerify_Test"/>
+          <include name="BuyProduct"/>
           <include name="Setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.flipkart.testing.TestPages.SmartWatches.FitBit_Test -->
     </classes>
