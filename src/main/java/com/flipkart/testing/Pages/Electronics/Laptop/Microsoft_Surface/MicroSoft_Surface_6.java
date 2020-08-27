@@ -24,4 +24,9 @@ public class MicroSoft_Surface_6 extends Basecls{
 		return Product_1st.getText();
 	}
 	
+	public void Product_Selection_Verify() {
+		Product_1st.click();
+	}
+	
+	
 }

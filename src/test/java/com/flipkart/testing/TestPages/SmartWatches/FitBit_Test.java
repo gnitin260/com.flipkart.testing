@@ -55,6 +55,7 @@ public class FitBit_Test extends Basecls{
 	@Test(priority = 3)
 	public void BuyProduct() throws InterruptedException {
 		fitbit.ProductSelection_Verify();
+		Thread.sleep(2000);
 		placeOrder.PlaceOrder();
 
 	}
