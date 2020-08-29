@@ -9,12 +9,16 @@ import com.flipkart.testing.Pages.Electronics.GoogleAssistance.GoogleAssistant;
 import com.flipkart.testing.Pages.Electronics.Google_Nest.Google_Nest_Mini;
 import com.flipkart.testing.Pages.Electronics.Laptop.Microsoft_Surface.MicroSoftProducts;
 import com.flipkart.testing.Pages.Electronics.SmartWatchWearable.SmartWatchs;
+import com.flipkart.testing.Pages.Men.Men_Tshirts;
 
 public class Menu extends Basecls{
 
 	
 	@FindBy(xpath = "//*[@id=\"container\"]/div/div[2]/div/ul/li[1]")
 	WebElement ElectronicsBtn;
+	
+	@FindBy(xpath = "//*[@id=\"container\"]/div/div[2]/div/ul/li[3]")
+	WebElement MenBtn;
 	
 	@FindBy(xpath ="//*[contains(text(),'Smart Watches')]")
 	WebElement smartWatchBtn;
@@ -27,7 +31,11 @@ public class Menu extends Basecls{
 	
 	@FindBy(xpath = "//*[contains(text(),'Google Assistant Store')]")
 	WebElement Google_Assistant_StoreBtn;
-
+	
+	@FindBy(xpath = "//*[contains(text(),'T-Shirts')]")
+	WebElement TshirtsBtn;
+	
+	
 	
 	public Menu() {
 		PageFactory.initElements(driver, this);
@@ -65,5 +73,13 @@ public class Menu extends Basecls{
 		Thread.sleep(2000);
 		Google_Assistant_StoreBtn.click();
 		return new GoogleAssistant();
+	}
+	
+	public Men_Tshirts navigatetoMen_Tshirts() throws InterruptedException {
+		Thread.sleep(5000);
+		MenBtn.click();
+		Thread.sleep(2000);
+		TshirtsBtn.click();
+		return new Men_Tshirts();
 	}
 }

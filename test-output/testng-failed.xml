@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.flipkart.testing.TestPages.MicroSoft_Product.MicroSoft_Surface_6_Test">
+      <class name="com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest">
         <methods>
-          <include name="Setup"/>
-          <include name="tearDown"/>
-          <include name="BuySurface6_Test"/>
+          <include name="SetUp"/>
+          <include name="BrandVerify_Test"/>
         </methods>
-      </class> <!-- com.flipkart.testing.TestPages.MicroSoft_Product.MicroSoft_Surface_6_Test -->
+      </class> <!-- com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -64,7 +64,7 @@ public class MicroSoft_Surface_6_Test extends Basecls{
 
 	@AfterTest
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 }
 
