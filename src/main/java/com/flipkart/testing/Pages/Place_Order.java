@@ -20,6 +20,8 @@ public class Place_Order extends Basecls {
 	@FindBy(className = "_7UHT_c")
 	WebElement placeOrder;
 
+	@FindBy(xpath = "//*[@id=\"swatch-0-size\"]/a")
+	WebElement sizeSelectionBtn;
 
 	public Place_Order() {
 		PageFactory.initElements(driver, this);
@@ -39,8 +41,8 @@ public class Place_Order extends Basecls {
 	}
 
 	public void PlaceOrder() throws InterruptedException {
-		
-		
+
+
 		String mainWindow=driver.getWindowHandle();
 		Set<String> set =driver.getWindowHandles();
 		Iterator<String> itr= set.iterator();
@@ -54,34 +56,59 @@ public class Place_Order extends Basecls {
 				deliveraddressBnt.click();
 				Thread.sleep(4000);
 				ordersummaryContinueBtn.click();
-				
+
 				driver.close();
 			}
 		}
 		driver.switchTo().window(mainWindow);
-		
-		
-//		String MainWindow=driver.getWindowHandle();		
-//		Set<String> s1=driver.getWindowHandles();		
-//		Iterator<String> i1=s1.iterator();		
-//
-//		while(i1.hasNext())			
-//		{		
-//			String ChildWindow=i1.next();		
-//
-//			if(!MainWindow.equalsIgnoreCase(ChildWindow))			
-//			{    		
-//				Thread.sleep(8000);
-//				placeOrder.click();  
-//				Thread.sleep(2000);
-//				deliveraddressBnt.click();
-//				Thread.sleep(4000);
-//				ordersummaryContinueBtn.click();
-//				Thread.sleep(4000);
-//				driver.close();		
-//			}		
-//		}		
-//		driver.switchTo().window(MainWindow);				
+
+
+		//		String MainWindow=driver.getWindowHandle();		
+		//		Set<String> s1=driver.getWindowHandles();		
+		//		Iterator<String> i1=s1.iterator();		
+		//
+		//		while(i1.hasNext())			
+		//		{		
+		//			String ChildWindow=i1.next();		
+		//
+		//			if(!MainWindow.equalsIgnoreCase(ChildWindow))			
+		//			{    		
+		//				Thread.sleep(8000);
+		//				placeOrder.click();  
+		//				Thread.sleep(2000);
+		//				deliveraddressBnt.click();
+		//				Thread.sleep(4000);
+		//				ordersummaryContinueBtn.click();
+		//				Thread.sleep(4000);
+		//				driver.close();		
+		//			}		
+		//		}		
+		//		driver.switchTo().window(MainWindow);				
+	}
+
+	public void PlaceOrderClothing() throws InterruptedException {
+		String mainWindow=driver.getWindowHandle();
+		Set<String> set =driver.getWindowHandles();
+		Iterator<String> itr= set.iterator();
+		while(itr.hasNext()){
+			String childWindow=itr.next();
+			if(!mainWindow.equals(childWindow)){
+				driver.switchTo().window(childWindow);
+				Thread.sleep(5000);
+				sizeSelectionBtn.click();
+				Thread.sleep(2000);
+				placeOrder.click();
+				Thread.sleep(3000);
+				deliveraddressBnt.click();
+				Thread.sleep(4000);
+				ordersummaryContinueBtn.click();
+
+				driver.close();
+			}
+		}
+		driver.switchTo().window(mainWindow);
+
+
 	}
 }
 

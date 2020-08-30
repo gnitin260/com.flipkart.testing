@@ -5,8 +5,8 @@
     <classes>
       <class name="com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest">
         <methods>
+          <include name="pageDetailVerify"/>
           <include name="SetUp"/>
-          <include name="BrandVerify_Test"/>
         </methods>
       </class> <!-- com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest -->
     </classes>

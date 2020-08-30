@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-29T14:23:31 IST" name="Default suite" finished-at="2020-08-29T14:24:16 IST" duration-ms="44899">
+  <suite started-at="2020-08-30T16:02:13 IST" name="Default suite" finished-at="2020-08-30T16:03:08 IST" duration-ms="54166">
     <groups>
     </groups>
-    <test started-at="2020-08-29T14:23:31 IST" name="Default test" finished-at="2020-08-29T14:24:16 IST" duration-ms="44899">
+    <test started-at="2020-08-30T16:02:13 IST" name="Default test" finished-at="2020-08-30T16:03:08 IST" duration-ms="54166">
       <class name="com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest@77167fb7]" started-at="2020-08-29T14:23:31 IST" name="SetUp" finished-at="2020-08-29T14:24:12 IST" duration-ms="41213" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest@6973bf95]" started-at="2020-08-30T16:02:13 IST" name="SetUp" finished-at="2020-08-30T16:02:47 IST" duration-ms="33737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="BrandVerify_Test()[pri:0, instance:com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest@77167fb7]" started-at="2020-08-29T14:24:13 IST" name="BrandVerify_Test" finished-at="2020-08-29T14:24:16 IST" duration-ms="3612" status="PASS">
+        <test-method signature="DetailVerify_Test()[pri:1, instance:com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest@6973bf95]" started-at="2020-08-30T16:02:47 IST" name="DetailVerify_Test" finished-at="2020-08-30T16:02:47 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DetailVerify_Test -->
+        <test-method signature="pageDetailVerify()[pri:2, instance:com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest@6973bf95]" started-at="2020-08-30T16:02:47 IST" name="pageDetailVerify" finished-at="2020-08-30T16:02:47 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageDetailVerify -->
+        <test-method signature="BrandVerify_Test()[pri:3, instance:com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest@6973bf95]" started-at="2020-08-30T16:02:47 IST" name="BrandVerify_Test" finished-at="2020-08-30T16:02:50 IST" duration-ms="3190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrandVerify_Test -->
+        <test-method signature="BuyProduct()[pri:4, instance:com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest@6973bf95]" started-at="2020-08-30T16:02:50 IST" name="BuyProduct" finished-at="2020-08-30T16:03:08 IST" duration-ms="17175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BuyProduct -->
       </class> <!-- com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
