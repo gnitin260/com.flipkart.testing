@@ -94,13 +94,13 @@ public class Place_Order extends Basecls {
 			String childWindow=itr.next();
 			if(!mainWindow.equals(childWindow)){
 				driver.switchTo().window(childWindow);
-				Thread.sleep(5000);
+				Thread.sleep(3000);
 				sizeSelectionBtn.click();
 				Thread.sleep(2000);
 				placeOrder.click();
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 				deliveraddressBnt.click();
-				Thread.sleep(4000);
+				Thread.sleep(2000);
 				ordersummaryContinueBtn.click();
 
 				driver.close();

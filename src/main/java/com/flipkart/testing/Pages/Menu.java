@@ -10,6 +10,7 @@ import com.flipkart.testing.Pages.Electronics.Google_Nest.Google_Nest_Mini;
 import com.flipkart.testing.Pages.Electronics.Laptop.Microsoft_Surface.MicroSoftProducts;
 import com.flipkart.testing.Pages.Electronics.SmartWatchWearable.SmartWatchs;
 import com.flipkart.testing.Pages.Men.Men_Tshirts;
+import com.flipkart.testing.Pages.Women.WesternMaterial.Dresses;
 
 public class Menu extends Basecls{
 
@@ -19,6 +20,9 @@ public class Menu extends Basecls{
 	
 	@FindBy(xpath = "//*[@id=\"container\"]/div/div[2]/div/ul/li[3]")
 	WebElement MenBtn;
+	
+	@FindBy(xpath = "//*[@id=\"container\"]/div/div[2]/div/ul/li[4]")
+	WebElement WomenBtn;
 	
 	@FindBy(xpath ="//*[contains(text(),'Smart Watches')]")
 	WebElement smartWatchBtn;
@@ -34,6 +38,9 @@ public class Menu extends Basecls{
 	
 	@FindBy(xpath = "//*[contains(text(),'T-Shirts')]")
 	WebElement TshirtsBtn;
+	
+	@FindBy(xpath = "//*[contains(text(),'Dresses')]")
+	WebElement DresseBtn;
 	
 	
 	
@@ -76,10 +83,17 @@ public class Menu extends Basecls{
 	}
 	
 	public Men_Tshirts navigatetoMen_Tshirts() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		MenBtn.click();
 		Thread.sleep(2000);
 		TshirtsBtn.click();
 		return new Men_Tshirts();
+	}
+	public Dresses navigatetoWomen_Dressess() throws InterruptedException {
+		Thread.sleep(6000);
+		WomenBtn.click();
+		Thread.sleep(4000);
+		DresseBtn.click();
+		return new Dresses();
 	}
 }

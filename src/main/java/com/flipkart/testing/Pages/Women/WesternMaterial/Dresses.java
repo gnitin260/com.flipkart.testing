@@ -1,4 +1,4 @@
-package com.flipkart.testing.Pages.Men;
+package com.flipkart.testing.Pages.Women.WesternMaterial;
 
 import java.util.List;
 
@@ -6,14 +6,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 
 import com.flipkart.testing.BaseClass.Basecls;
-import com.flipkart.testing.Utility.CustomeListner;
+import com.flipkart.testing.Pages.Men.Wrangler;
 
-@Listeners(CustomeListner.class)
+public class Dresses extends Basecls{
 
-public class Wrangler extends Basecls{
+	@FindBy(xpath = "//*[@id=\"container\"]/div/div[3]/div[2]/div[1]/div[2]/div[1]/div/div/h1")
+	WebElement pageHeading;
+
+	@FindBy(xpath = "//*[@id=\"container\"]/div/div[3]/div[2]/div[1]/div[2]/div[1]/div/div/div[2]/div/p")
+	WebElement detailData;
 
 	@FindBy(xpath = "//*[@id=\"container\"]/div/div[3]/div[2]/div/div[1]/div/div/div/section[1]/div[1]/div[2]/span")
 	WebElement ClearAllBtn;
@@ -27,30 +30,32 @@ public class Wrangler extends Basecls{
 	@FindBy(xpath = "//*[@id=\"container\"]/div/div[3]/div[2]/div/div[2]/div[2]/div/div[1]/div/a")
 	WebElement ProductSelect;
 
-	@FindBy(xpath = "//*[@id=\"container\"]/div/div[3]/div[2]/div/div[2]/div[1]/div/div/h1")
-	WebElement pageDetail;
-
-
-
-	@FindBy(xpath = "//*[@id=\"container\"]/div/div[3]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/p")
-	WebElement WranglerDetail;
-
-	public Wrangler() {
+	public Dresses() {
 		initElement();
 	}
 
-	public String pageDetail() {
-		return pageDetail.getText();
+	public String TitleVerify() throws InterruptedException {
+		Thread.sleep(5000);
+		return driver.getTitle();
 	}
 
-	public String DetailVerify() {
-		return WranglerDetail.getText();
+	public String PageVerify() {
+		return pageHeading.getText();
 	}
 
-
+	public String detailVerify() {
+		return detailData.getText();
+	}
 	public void ProductSelectionVerify() throws InterruptedException {
 		Thread.sleep(2000);
 		ProductSelect.click();
+	}
+	public  void  BrandSelection_Ist(String Brand)throws InterruptedException {
+		Thread.sleep(5000);
+		searchBrand.sendKeys(Brand);
+		Thread.sleep(2000);
+		SelectBrand.click();
+		
 	}
 
 	public void BrandVerify(String expexted) throws InterruptedException {
