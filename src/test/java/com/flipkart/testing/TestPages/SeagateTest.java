@@ -2,8 +2,6 @@ package com.flipkart.testing.TestPages;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.util.Iterator;
 import java.util.Set;
 

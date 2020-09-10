@@ -6,6 +6,7 @@ import java.util.Set;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.flipkart.testing.BaseClass.Basecls;
 
@@ -19,9 +20,22 @@ public class Place_Order extends Basecls {
 
 	@FindBy(className = "_7UHT_c")
 	WebElement placeOrder;
+	
+	@FindBy(xpath = "")
+	WebElement FinalResult;
 
 	@FindBy(xpath = "//*[@id=\"swatch-0-size\"]/a")
 	WebElement sizeSelectionBtn;
+
+	@FindBy(xpath = "//*[@id=\"swatch-1-size\"]/a")
+	WebElement sizeSelectionBtn2;
+	
+	@FindBy(xpath = "//*[@id=\"swatch-3-size\"]/a")
+	WebElement sizeSelectionBtn3;
+
+	@FindBy(xpath = "//*[@id=\"container\"]/div/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div/span")
+	WebElement sizeSelectionMsg;
+	
 
 	public Place_Order() {
 		PageFactory.initElements(driver, this);
@@ -102,7 +116,6 @@ public class Place_Order extends Basecls {
 				deliveraddressBnt.click();
 				Thread.sleep(2000);
 				ordersummaryContinueBtn.click();
-
 				driver.close();
 			}
 		}
@@ -110,6 +123,78 @@ public class Place_Order extends Basecls {
 
 
 	}
+
+	public void SizeVerifyselection() throws InterruptedException {
+		String mainWindow=driver.getWindowHandle();
+		Set<String> set =driver.getWindowHandles();
+		Iterator<String> itr= set.iterator();
+		while(itr.hasNext()){
+			String childWindow=itr.next();
+			if(!mainWindow.equals(childWindow)){
+				driver.switchTo().window(childWindow);
+				Thread.sleep(3000);
+				placeOrder.click();
+				Thread.sleep(2000);
+				String txt=sizeSelectionMsg.getText();
+				Assert.assertEquals(txt, "Please select a Size to proceed");
+
+				driver.close();
+			}
+		}
+
+		driver.switchTo().window(mainWindow);
+	}
+	
+	public void SizeSelection() throws InterruptedException {
+		String mainWindow=driver.getWindowHandle();
+		Set<String> set =driver.getWindowHandles();
+		Iterator<String> itr= set.iterator();
+		while(itr.hasNext()){
+			String childWindow=itr.next();
+			if(!mainWindow.equals(childWindow)){
+				driver.switchTo().window(childWindow);
+				Thread.sleep(3000);
+				
+			if(sizeSelectionBtn.isEnabled()) {
+				sizeSelectionBtn.click();
+				Thread.sleep(2000);
+				placeOrder.click();
+				Thread.sleep(2000);
+				deliveraddressBnt.click();
+				Thread.sleep(2000);
+				ordersummaryContinueBtn.click();
+				Assert.assertEquals(FinalResult.getText(), "");
+			}
+			else if(sizeSelectionBtn2.isEnabled()) {
+					sizeSelectionBtn2.click();
+					Thread.sleep(2000);
+					placeOrder.click();
+					Thread.sleep(2000);
+					deliveraddressBnt.click();
+					Thread.sleep(2000);
+					ordersummaryContinueBtn.click();
+					Assert.assertEquals(FinalResult.getText(), "");
+				}
+			else if(sizeSelectionBtn3.isEnabled()) {
+				sizeSelectionBtn3.click();
+				Thread.sleep(2000);
+				placeOrder.click();
+				Thread.sleep(2000);
+				deliveraddressBnt.click();
+				Thread.sleep(2000);
+				ordersummaryContinueBtn.click();
+				Assert.assertEquals(FinalResult.getText(), "");
+			}
+			
+			}
+				driver.close();
+			}
+		
+
+		driver.switchTo().window(mainWindow);
+	
+	}
 }
+
 
 

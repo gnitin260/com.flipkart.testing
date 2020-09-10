@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.flipkart.testing.TestPages.Women.WesternMaterilTest.DressesTest">
+      <class name="com.flipkart.testing.TestPages.AC.LG_AC_Test">
         <methods>
-          <include name="BuyLevi_s"/>
-          <include name="LeeSelectionTest"/>
-          <include name="BuyLibas"/>
-          <include name="LevisSelectionTest"/>
-          <include name="BuyLevis"/>
-          <include name="BuyLee"/>
-          <include name="TitleVerify_Test"/>
+          <include name="Teardown"/>
+          <include name="DiscountVerify_Test"/>
           <include name="SetUp"/>
-          <include name="LibasSelectionTest"/>
         </methods>
-      </class> <!-- com.flipkart.testing.TestPages.Women.WesternMaterilTest.DressesTest -->
+      </class> <!-- com.flipkart.testing.TestPages.AC.LG_AC_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

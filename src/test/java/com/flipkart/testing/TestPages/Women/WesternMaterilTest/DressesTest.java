@@ -36,15 +36,16 @@ public class DressesTest extends Basecls {
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void TitleVerify_Test() throws InterruptedException {
 		String txt= dress .TitleVerify();
 		Assert.assertEquals(txt, "Dresses Online (???????) - Buy Stylish Dresses For Women Online on Sale | Party Wear & Western Dresses - Flipkart");
 	}
 
-	@Test(priority = 2)
-	public void PageVerify_Test() {
+	@Test(priority = 1)
+	public void PageVerify_Test() throws InterruptedException {
 		String txt=dress.PageVerify();
+		Thread.sleep(2000);
 		Assert.assertEquals(txt, "Women's Dresses");
 	}
 	@Test(priority = 3)
@@ -57,75 +58,77 @@ public class DressesTest extends Basecls {
 	}
 	@Test(priority = 4)
 	public void BrandVerify_Test() throws InterruptedException {
-		dress.BrandSelection_Ist("W");
-		dress.BrandSelection("W");	
-		dress.BrandVerify("W");
-	}
-
-	@Test(priority = 4)
-	public void BuyProduct() throws InterruptedException {
-		dress.ProductSelectionVerify();
-		placeOrder.PlaceOrderClothing();
+		dress.BrandSelection_Ist("United Colors of Benetton");
+		dress.BrandVerify("United Colors of Benetton");
 	}
 
 	@Test(priority = 5)
+	public void BuyProduct() throws InterruptedException {
+		dress.ProductSelectionVerify();
+		placeOrder.SizeVerifyselection();
+		Thread.sleep(5000);
+		dress.ProductSelectionVerify();
+		placeOrder.SizeSelection();
+	}
+
+	@Test(priority = 6)
 	public void Levi_sSelectionTest() throws InterruptedException {
 		dress.BrandSelection("Levi's");	
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void Levi_sBrandVerify_Test() throws InterruptedException {
 		dress.BrandVerify("Levi's");
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void BuyLevi_s() throws InterruptedException {
 		dress.ProductSelectionVerify();
-		placeOrder.PlaceOrderClothing();
+		placeOrder.SizeSelection();
 	}
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void LevisSelectionTest() throws InterruptedException {
 		dress.BrandSelection("Levis");	
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 10)
 	public void LevisBrandVerify_Test() throws InterruptedException {
 		dress.BrandVerify("Levis");
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 11)
 	public void BuyLevis() throws InterruptedException {
 		dress.ProductSelectionVerify();
-		placeOrder.PlaceOrderClothing();
+		placeOrder.SizeSelection();
 	}
-	@Test(priority = 11)
+	@Test(priority = 12)
 	public void LibasSelectionTest() throws InterruptedException {
 		dress.BrandSelection("Libas");	
 	}
 
-	@Test(priority = 12)
+	@Test(priority = 13)
 	public void LibasBrandVerify_Test() throws InterruptedException {
 		dress.BrandVerify("Libas");
 	}
 
-	@Test(priority = 13)
+	@Test(priority = 14)
 	public void BuyLibas() throws InterruptedException {
 		dress.ProductSelectionVerify();
-		placeOrder.PlaceOrderClothing();
+		placeOrder.SizeSelection();
 	}
-	@Test(priority = 14)
+	@Test(priority = 15)
 	public void LeeSelectionTest() throws InterruptedException {
 		dress.BrandSelection("Lee");	
 	}
 
-	@Test(priority = 15)
+	@Test(priority = 16)
 	public void LeeBrandVerify_Test() throws InterruptedException {
 		dress.BrandVerify("Lee");
 	}
 
-	@Test(priority = 16)
+	@Test(priority = 17)
 	public void BuyLee() throws InterruptedException {
 		dress.ProductSelectionVerify();
-		placeOrder.PlaceOrderClothing();
+		placeOrder.SizeSelection();
 	}
 }

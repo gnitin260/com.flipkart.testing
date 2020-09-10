@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.flipkart.testing.BaseClass.Basecls;
+import com.flipkart.testing.Pages.AC.AC;
 import com.flipkart.testing.Pages.Electronics.GoogleAssistance.GoogleAssistant;
 import com.flipkart.testing.Pages.Electronics.Google_Nest.Google_Nest_Mini;
 import com.flipkart.testing.Pages.Electronics.Laptop.Microsoft_Surface.MicroSoftProducts;
@@ -17,6 +18,9 @@ public class Menu extends Basecls{
 	
 	@FindBy(xpath = "//*[@id=\"container\"]/div/div[2]/div/ul/li[1]")
 	WebElement ElectronicsBtn;
+	
+	@FindBy(xpath = "/html/body/div/div/div[2]/div/div/span[2]")
+	WebElement TV_Applinces_Btn;
 	
 	@FindBy(xpath = "//*[@id=\"container\"]/div/div[2]/div/ul/li[3]")
 	WebElement MenBtn;
@@ -41,6 +45,9 @@ public class Menu extends Basecls{
 	
 	@FindBy(xpath = "//*[contains(text(),'Dresses')]")
 	WebElement DresseBtn;
+	
+	@FindBy(xpath = "//*[contains(text(),'Air Conditioners')]")
+	WebElement ACBtn;
 	
 	
 	
@@ -95,5 +102,14 @@ public class Menu extends Basecls{
 		Thread.sleep(4000);
 		DresseBtn.click();
 		return new Dresses();
+	}
+
+	public AC navigatetoAC() throws InterruptedException {
+		Thread.sleep(5000);
+		TV_Applinces_Btn.click();
+		Thread.sleep(2000);
+		ACBtn.click();
+		return new AC();
+		
 	}
 }

@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
 import com.flipkart.testing.BaseClass.Basecls;
-import com.flipkart.testing.Pages.Men.Wrangler;
 
 public class Dresses extends Basecls{
 
