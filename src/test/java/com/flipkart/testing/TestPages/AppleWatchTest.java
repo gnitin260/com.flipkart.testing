@@ -5,8 +5,7 @@ import org.testng.Assert;
 import java.util.Iterator;
 import java.util.Set;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import com.flipkart.testing.BaseClass.Basecls;
 import com.flipkart.testing.Pages.Cart;
 import com.flipkart.testing.Pages.Login;
@@ -29,7 +28,7 @@ public class AppleWatchTest extends Basecls{
 	}
 
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		intialization();
 		login =new Login();	

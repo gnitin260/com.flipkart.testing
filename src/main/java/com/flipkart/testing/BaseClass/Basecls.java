@@ -26,7 +26,7 @@ public class Basecls {
 	public Basecls() {
 		try {
 			prop= new Properties();
-			FileInputStream id=new FileInputStream("D:\\Selenium\\com.flipkart.testing\\src\\main\\java\\com\\flipkart\\testing\\Properties\\flipProp");
+			FileInputStream id=new FileInputStream("D:\\Selenium\\Selenium Project\\com.flipkart.testing\\src\\main\\java\\com\\flipkart\\testing\\Properties\\flipProp");
 			prop.load(id);
 		} catch (FileNotFoundException e){
 			e.printStackTrace();
@@ -38,11 +38,11 @@ public class Basecls {
 	public void intialization() {
 		String browserName= prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\com.flipkart.testing\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\Selenium Project\\com.flipkart.testing\\drivers\\chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		else if(browserName.equals("FF")) {
-			System.setProperty("webdriver.gecko.driver", "D:\\Selenium\\com.flipkart.testing\\drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "D:\\Selenium\\Selenium Project\\com.flipkart.testing\\drivers\\geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
 		driver.manage().window().maximize();
@@ -55,7 +55,7 @@ public class Basecls {
 	public void failed(String testMethod) {
 		File scrFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(scrFile, new File("D:\\Selenium\\com.flipkart.testing\\Fail_ScreenShot\\"+testMethod+"_"+".jpg"));
+			FileUtils.copyFile(scrFile, new File("D:\\Selenium\\Selenium Project\\com.flipkart.testing\\Fail_ScreenShot\\"+testMethod+"_"+".jpg"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

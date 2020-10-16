@@ -3,6 +3,7 @@ package com.flipkart.testing.TestPages;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import com.flipkart.testing.BaseClass.Basecls;
 import com.flipkart.testing.Pages.Login;
@@ -19,7 +20,7 @@ public class HardDiskTest extends Basecls{
 		super();
 	}
 	
-	@BeforeTest
+	@BeforeMethod
 	public void setup() throws InterruptedException {
 		intialization();
 		ehd= new ExternalHardDisk();
@@ -50,9 +51,6 @@ public class HardDiskTest extends Basecls{
 	}
 	
 	
-	@AfterTest
-	public void teardown() {
-	//	driver.quit();
-	}
+	
 	
 }

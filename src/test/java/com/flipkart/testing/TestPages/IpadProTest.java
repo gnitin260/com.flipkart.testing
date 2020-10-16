@@ -2,6 +2,7 @@ package com.flipkart.testing.TestPages;
 
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import com.flipkart.testing.BaseClass.Basecls;
 import com.flipkart.testing.Pages.Login;
@@ -21,7 +22,7 @@ public class IpadProTest extends Basecls{
 		super();
 	}
 	
-	@BeforeTest
+	@BeforeMethod
 	public void Setup() throws InterruptedException {
 		intialization();
 		ipad = new IpadPro();

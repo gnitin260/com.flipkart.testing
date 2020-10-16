@@ -2,8 +2,7 @@ package com.flipkart.testing.TestPages;
 
 import org.testng.annotations.Test;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
 import com.flipkart.testing.BaseClass.Basecls;
@@ -20,7 +19,7 @@ public class InvalidLoginTest extends Basecls {
 	}
 
 
-	@BeforeTest
+	@BeforeMethod
 	public void setUp() {
 		intialization();
 		inlog =new Login();
@@ -73,8 +72,5 @@ public class InvalidLoginTest extends Basecls {
 		Assert.assertEquals(errormsgpsd, "Please enter valid Email ID/Mobile number");
 	}
 
-	@AfterTest
-	public void teardown() {
-		driver.quit();
-	}
+	
 }

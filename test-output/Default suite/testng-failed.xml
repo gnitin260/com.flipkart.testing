@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.flipkart.testing.TestPages.AC.LG_AC_Test">
+      <class name="com.flipkart.testing.TestPages.InvalidLoginTest">
         <methods>
-          <include name="Teardown"/>
-          <include name="DiscountVerify_Test"/>
-          <include name="SetUp"/>
+          <include name="invalidTest4"/>
+          <include name="invalidTest1"/>
+          <include name="invalidTest3"/>
+          <include name="invalidTest5"/>
+          <include name="setUp"/>
+          <include name="invalidTest2"/>
+          <include name="invalidTest6"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.flipkart.testing.TestPages.AC.LG_AC_Test -->
+      </class> <!-- com.flipkart.testing.TestPages.InvalidLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

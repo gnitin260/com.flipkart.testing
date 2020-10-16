@@ -2,8 +2,7 @@ package com.flipkart.testing.TestPages;
 
 import org.testng.annotations.Test;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 import com.flipkart.testing.BaseClass.Basecls;
 import com.flipkart.testing.Pages.Login;
 import com.flipkart.testing.Pages.Electronics.Mobile.Mi;
@@ -20,7 +19,7 @@ public class MiTest extends Basecls{
 	}
 
 
-	@BeforeTest
+	@BeforeMethod
 	public void setUp() throws InterruptedException {
 		intialization();
 		mi=new Mi();
@@ -204,10 +203,7 @@ public class MiTest extends Basecls{
 
 
 
-	@AfterTest
-	public void tearDown() throws InterruptedException {
-				driver.close();
-	}
+	
 
 
 
