@@ -1,15 +1,304 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.flipkart.testing.TestPages.AppleWatchTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="addtoCartTest"/>
+          <include name="setUp"/>
+          <include name="high_lowfilterTest"/>
+          <include name="pageVerifyTest"/>
+          <include name="populartyfilterTest"/>
+          <include name="titleTest"/>
+          <include name="placeorder"/>
+          <include name="low_highfilterTest"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.AppleWatchTest -->
+      <class name="com.flipkart.testing.TestPages.CartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="pageTest"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.CartTest -->
+      <class name="com.flipkart.testing.TestPages.Women.WesternMaterilTest.DressesTest">
+        <methods>
+          <include name="BuyProduct"/>
+          <include name="LeeSelectionTest"/>
+          <include name="LevisBrandVerify_Test"/>
+          <include name="PageVerify_Test"/>
+          <include name="Levi_sBrandVerify_Test"/>
+          <include name="BuyLee"/>
+          <include name="DetailVerify_Test"/>
+          <include name="TitleVerify_Test"/>
+          <include name="LibasSelectionTest"/>
+          <include name="BuyLevi_s"/>
+          <include name="LeeBrandVerify_Test"/>
+          <include name="BuyLibas"/>
+          <include name="BrandVerify_Test"/>
+          <include name="LevisSelectionTest"/>
+          <include name="LibasBrandVerify_Test"/>
+          <include name="Levi_sSelectionTest"/>
+          <include name="BuyLevis"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.Women.WesternMaterilTest.DressesTest -->
+      <class name="com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest">
+        <methods>
+          <include name="LeeSelectionTest"/>
+          <include name="BuyLevis"/>
+          <include name="BrandVerify_Test"/>
+          <include name="BuyLee"/>
+          <include name="DetailVerify_Test"/>
+          <include name="LevisBrandVerify_Test"/>
+          <include name="tearDown"/>
+          <include name="BuyProduct"/>
+          <include name="MuftiBrandVerify_Test"/>
+          <include name="BuyLevi_s"/>
+          <include name="Levi_sBrandVerify_Test"/>
+          <include name="MuftiSelectionTest"/>
+          <include name="LevisSelectionTest"/>
+          <include name="LeeBrandVerify_Test"/>
+          <include name="pageDetailVerify"/>
+          <include name="Levi_sSelectionTest"/>
+          <include name="SetUp"/>
+          <include name="BuyMufti"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.Men.Tshirts.Wrangler_TshirtTest -->
+      <class name="com.flipkart.testing.TestPages.HomePageTest">
+        <methods>
+          <include name="AboutusValidationTest"/>
+          <include name="contactUsValidationTest"/>
+          <include name="logoTest"/>
+          <include name="ValidateHomepageImgTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="titleTest"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.HomePageTest -->
+      <class name="com.flipkart.testing.TestPages.MicroSoft_Product.MicroSoft_Surface_7_Test">
+        <methods>
+          <include name="TitleVerify_Test"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+          <include name="ProductVerify_Test"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.MicroSoft_Product.MicroSoft_Surface_7_Test -->
+      <class name="com.flipkart.testing.TestPages.AboutUsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="growthImgTest"/>
+          <include name="teardown"/>
+          <include name="aboutUsTitleTest"/>
+          <include name="launchDetailImgTest"/>
+          <include name="mailUsTest"/>
+          <include name="flipkartStoryImgTest"/>
+          <include name="detaiImgTest"/>
+          <include name="objimgTest"/>
+          <include name="startBy2ImgTest"/>
+          <include name="globalImgTest"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.AboutUsTest -->
       <class name="com.flipkart.testing.TestPages.AC.LG_AC_Test">
         <methods>
           <include name="Teardown"/>
+          <include name="AmountVerify_Test"/>
           <include name="DiscountVerify_Test"/>
+          <include name="TitleVerify_Test"/>
+          <include name="PagetVerify_Test"/>
+          <include name="WindowLG_AC_Test"/>
           <include name="SetUp"/>
         </methods>
       </class> <!-- com.flipkart.testing.TestPages.AC.LG_AC_Test -->
+      <class name="com.flipkart.testing.TestPages.SmartWatches.FitBit_Test">
+        <methods>
+          <include name="TitleVerify_Test"/>
+          <include name="BuyProduct"/>
+          <include name="PageVerify_Test"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.SmartWatches.FitBit_Test -->
+      <class name="com.flipkart.testing.TestPages.GoogleAssistant.Google_Assistant_Test">
+        <methods>
+          <include name="TitleVerify_Test"/>
+          <include name="SetUp"/>
+          <include name="googleAssistant_Term_ConditonsImg_Verify_Test"/>
+          <include name="googleAssistanta_SmartTV2_Verify_Test"/>
+          <include name="googleAssistant_Term_ConditonsImg2_Test"/>
+          <include name="googleAssistant_DeviceImg_Verify_Test"/>
+          <include name="googleAssistant_SmartPhoneImg_Verify_Test"/>
+          <include name="PageVerify"/>
+          <include name="googleAssistant_SmartPhoneImg3_Verify_Test"/>
+          <include name="googleAssistanta_SmartTV_Verify_Test"/>
+          <include name="googleLanguageImg2_Verify_Test"/>
+          <include name="googleLanguageImg_Verify_Test"/>
+          <include name="tearDown"/>
+          <include name="googleAssistantImg_Verify_Test"/>
+          <include name="googleAssistant_SmartPhoneImg2_Verify_Test"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.GoogleAssistant.Google_Assistant_Test -->
+      <class name="com.flipkart.testing.TestPages.HardDiskTest">
+        <methods>
+          <include name="PageVerifyTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="WDTest"/>
+          <include name="PageTitleVerificationTest"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.HardDiskTest -->
+      <class name="com.flipkart.testing.TestPages.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.LoginTest -->
+      <class name="com.flipkart.testing.TestPages.IpadProTest">
+        <methods>
+          <include name="PageElementTest"/>
+          <include name="PageTitleTest"/>
+          <include name="TitleVerificationTest"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.IpadProTest -->
+      <class name="com.flipkart.testing.TestPages.Men.MenTshirts_Test">
+        <methods>
+          <include name="PageDetailVerify_Test"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+          <include name="PageVerify_Test"/>
+          <include name="TitleVerify_Test"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.Men.MenTshirts_Test -->
+      <class name="com.flipkart.testing.TestPages.MicroSoft_Product.MicroSoft_Surface_6_Test">
+        <methods>
+          <include name="TitleVerify_Test"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+          <include name="BuySurface6_Test"/>
+          <include name="ProductVerify_Test"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.MicroSoft_Product.MicroSoft_Surface_6_Test -->
+      <class name="com.flipkart.testing.TestPages.MicroSoft_Product.MicroSoft_product_Test">
+        <methods>
+          <include name="tesrdown"/>
+          <include name="ServicesMicrosoftImgVerify_Test"/>
+          <include name="AboutMicroSoftImgVerify_Test"/>
+          <include name="AllSurfaceImgVerify_Test"/>
+          <include name="Surface7ProImg2Verify_Test"/>
+          <include name="Setup"/>
+          <include name="PageVerifyTest"/>
+          <include name="Surface7ProImgVerify_Test"/>
+          <include name="TitleTest"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.MicroSoft_Product.MicroSoft_product_Test -->
+      <class name="com.flipkart.testing.TestPages.MiTest">
+        <methods>
+          <include name="Mi2GBfilterTest"/>
+          <include name="Mi8GBROMTest"/>
+          <include name="setUp"/>
+          <include name="Mi6GBfilterTest"/>
+          <include name="Mi4GBfilterTest"/>
+          <include name="Mi16GBROMTest"/>
+          <include name="Mi3GBfilterTest"/>
+          <include name="MiCompanyVerificationTest"/>
+          <include name="Mi32GBROMTest"/>
+          <include name="Mi256GBROMTest"/>
+          <include name="Mi128GBROMTest"/>
+          <include name="Mi64GBROMTest"/>
+          <include name="Mi1GBfilterTest"/>
+          <include name="low_highTest"/>
+          <include name="high_lowTest"/>
+          <include name="TitleVerifyTest"/>
+          <include name="newestTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.MiTest -->
+      <class name="com.flipkart.testing.TestPages.GoogleNestMini.GoogleNestMINIProductTest">
+        <methods>
+          <include name="googleNestminiFeatureImgProductVerifyTest"/>
+          <include name="pageVerifygoogleNestminiFeatureImgProductVerifyTest"/>
+          <include name="ColorSelectionTest"/>
+          <include name="TitleVerifyTest"/>
+          <include name="ColorSelectiongoogleNestminiFeatureImgProductVerifyTest"/>
+          <include name="BuyProduct_googleNestminiVerifyTest"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+          <include name="pageVerify"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.GoogleNestMini.GoogleNestMINIProductTest -->
+      <class name="com.flipkart.testing.TestPages.AppleTest">
+        <methods>
+          <include name="Iphone8Test"/>
+          <include name="MacbookAirTest"/>
+          <include name="ipadTest"/>
+          <include name="Iphone7Test"/>
+          <include name="MacbookAssesTest"/>
+          <include name="MacbookofferTest"/>
+          <include name="AppleWatchTest"/>
+          <include name="PageVerification"/>
+          <include name="Iphone8PlusTest"/>
+          <include name="tearDown"/>
+          <include name="TitleTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.AppleTest -->
+      <class name="com.flipkart.testing.TestPages.InvalidLoginTest">
+        <methods>
+          <include name="invalidTest4"/>
+          <include name="invalidTest1"/>
+          <include name="invalidTest3"/>
+          <include name="invalidTest5"/>
+          <include name="setUp"/>
+          <include name="invalidTest2"/>
+          <include name="invalidTest6"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.InvalidLoginTest -->
+      <class name="com.flipkart.testing.TestPages.SeagateTest">
+        <methods>
+          <include name="PageTitleTest"/>
+          <include name="productSelectionTest"/>
+          <include name="teardown"/>
+          <include name="addtoCartTest"/>
+          <include name="setup"/>
+          <include name="PageTest"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.SeagateTest -->
+      <class name="com.flipkart.testing.TestPages.GoogleNestMini.GoogleNestMini_Test">
+        <methods>
+          <include name="googleNestControlHomeVoiceImgVerifyTest"/>
+          <include name="googleNestminiImg1VerifyTest"/>
+          <include name="googleNestTerm_and_ConditionsImgVerify"/>
+          <include name="Setup"/>
+          <include name="googleNestOkGoogleImgVerifyTest"/>
+          <include name="googleNestFindRightHelp2ImgVerify"/>
+          <include name="googleNestFindRightHelpImgVerify"/>
+          <include name="googleNestControlHomeDevicePartnerImgVerifyTest"/>
+          <include name="googleNestRoomImgVerifyTest"/>
+          <include name="PageVeifyTest"/>
+          <include name="TitleVerify_Test"/>
+          <include name="googleNestMusicPartnerImgVerifyTest"/>
+          <include name="googleNestRoom2ImgVerifyTest"/>
+          <include name="tearDown"/>
+          <include name="googleNestGaanaImgVerifyTest"/>
+          <include name="googleNestDetailImgVerifyTest"/>
+          <include name="googleNestminiFeatureImgVerifyTest"/>
+          <include name="googleNestDimLightImgVerifyTest"/>
+          <include name="smartHomeStarter_KitImgVerifyTest"/>
+          <include name="smartHomeSet_UpKitImgVerifyTest"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.GoogleNestMini.GoogleNestMini_Test -->
+      <class name="com.flipkart.testing.TestPages.MobileTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="IphonenavigationTest"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.flipkart.testing.TestPages.MobileTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

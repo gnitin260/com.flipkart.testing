@@ -122,12 +122,6 @@ public class AppleWatchTest extends Basecls{
 		}
 	}
 
-	@AfterTest
-	public void tearDown() throws InterruptedException {
-		driver.navigate().refresh();
-		driver.quit();
-		
-	}
 
 
 }

@@ -19,8 +19,8 @@ import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 
 public class TestUtil extends Basecls{
 
-	public static long PAGE_LOAD_TIMEOOUT=10;
-	public static long IMPLICIT_WAIT=10;
+	public static long PAGE_LOAD_TIMEOOUT=40;
+	public static long IMPLICIT_WAIT=20;
 
 	public static void ScrolltoElement(WebElement element) throws InterruptedException {
 		JavascriptExecutor js=(JavascriptExecutor) driver;

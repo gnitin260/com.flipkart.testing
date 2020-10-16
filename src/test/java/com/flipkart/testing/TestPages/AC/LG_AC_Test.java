@@ -50,17 +50,27 @@ public class LG_AC_Test extends Basecls{
 
 	@Test(priority = 3)
 	public void AmountVerify_Test() throws InterruptedException {
-		lg.AmountVerify();
+		lg.AllAmountVerify();
 	}
 
 	@Test(priority = 4)
-	public void DiscountVerify_Test() throws InterruptedException {
+	public void DiscountVerify_Test() throws InterruptedException  {
+		lg.AllDiscountVerify();
+		lg.discountBtn();
 		lg.DiscountVerify();
+	}
+
+	@Test(priority = 5)
+	public void WindowLG_AC_Test() throws InterruptedException {
+		lg.WindowDiscount_Verify();
+		lg.DiscountAmountVerify();
 	}
 
 
 	@AfterTest
-	public void Teardown() {
-		//driver.quit();
+	public void Teardown() throws InterruptedException {
+		Thread.sleep(5000);
+		//	driver.quit();
+
 	}
 }
